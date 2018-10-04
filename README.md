@@ -1,27 +1,35 @@
-# MeanContactlistAngular2
+# Deploy Your Own REST API in 30 Mins Using mLabs and Heroku
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
+This tutorial demonstrates how to use the MEAN stack to rapidly create a RESTful API server and web application.
 
-## Development server
+http://sitepoint.com/deploy-rest-api-in-30-mins-mlabs-heroku
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Requirements
 
-## Code scaffolding
+* [Node.js](http://nodejs.org/)
+* [Heroku Account](https://signup.heroku.com/)
+* [Heroku Toolbelt](https://toolbelt.heroku.com/)
+* [mLab account](https://mlab.com/signup/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+1. Clone repo
+2. Run `heroku create`
+3. Run `npm install`
+4. Create a new single-node Sandbox MongoDB database in US EAST
+5. Set `MONGOLAB_URI` env var on Heroku
+6. Run `git push heroku master`
+7. Run `heroku ps:scale web=1`
+8. Run `heroku open`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## License
 
-## Running unit tests
+The MIT License (MIT)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Copyright (c) 2016 SitePoint
 
-## Running end-to-end tests
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
